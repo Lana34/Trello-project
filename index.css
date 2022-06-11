@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.header, .todoColumnsWrapper{
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ab8fe2;
+  padding: 10px 50px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.header__item{
+    font-size: 23px;
+    font-weight: 600;
+}
+    
+.todoColumnsWrapper{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.todoColumns__header{
+    width: 350px;
+    height: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.todoColumns__header_colorGreen{
+    background-color: #90EE90;
+}
+
+.todoColumns__header_colorGrey{
+    background-color: #dee1e1;
+}
+
+.todoColumns__header_colorBlue{
+    background-color: #afc9ec;
+}
+
+.todoColumns__add, .todoColumns__delete{
+    width: 390px;
+    height: 60px;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+
+.todoColumns__add{
+    background-color: #90EE90 ;
+}
+
+.todoColumns__add:hover{
+    background-color: #6fc06f;
+    cursor: pointer;
+}
+
+.todoColumns__delete{
+    background-color: #afc9ec;
+}
+
+.todoColumns__delete:hover{
+    background-color: #7fa3d2;
+    cursor: pointer;
+}
+
+.todoColumns__containerFirst, .todoColumns__containerSecond, .todoColumns__containerThird{
+height: 490px;
+overflow: auto;
+}
