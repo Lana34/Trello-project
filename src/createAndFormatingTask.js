@@ -1,5 +1,5 @@
 
-const todosWrapper = document.querySelector(".todoColumns__containerFirst")
+const todosWrapper = document.querySelector(".todoColumns__container_first")
 export const addTaskBtn = document.querySelector(".todoColumns__add")
 let now = new Date().toLocaleDateString()
 
