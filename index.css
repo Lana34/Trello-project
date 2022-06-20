@@ -78,7 +78,7 @@
     cursor: pointer;
 }
 
-.todoColumns__container {
+.todoColumns__containerFirst, .todoColumns__containerSecond, .todoColumns__containerThird {
 height: 490px;
 overflow: auto;
 }
