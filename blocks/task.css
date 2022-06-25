@@ -1,3 +1,5 @@
+
+
 .todoItem, .todoBlock {
 display: flex;
 max-width: 345px;
@@ -45,3 +47,16 @@ align-self: flex-end;
 .todoBlock_colorGreen{
     background: #90EE90;
 }
+
+.todoBlock_colorGrey{
+    background: #dee1e1;
+}
+
+.todoBlock_colorBlue{
+    background: #afc9ec;
+}
+
+.hide {
+display: none;
+}
+

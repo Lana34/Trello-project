@@ -18,19 +18,32 @@
     </div>
     <div class="todoColumnsWrapper">
     <div class="todoColumns__first">
-        <div class="todoColumns__header todoColumns__header_colorGreen">ToDo:</div>
-        <div class="todoColumns__containerFirst"></div>
+        <div class="todoColumns__header todoColumns__header_colorGreen">ToDo:<span class="todo"></span></div>
+        <div class="todoColumns__container todoColumns__containerFirst"></div>
         <button class="todoColumns__add">Add Todo</button>
     </div>
     <div class="todoColumns__second">
-        <div class="todoColumns__header todoColumns__header_colorGrey">In progress: </div>
-        <div class="todoColumns__containerSecond">  </div>
+        <div class="todoColumns__header todoColumns__header_colorGrey">In progress: <span class="inProgress"></span> </div>
+        <div class="todoColumns__container todoColumns__containerSecond">  </div>
     </div>
     <div class="todoColumns__third">
-        <div class="todoColumns__header todoColumns__header_colorBlue">Done: </div>
-        <div class="todoColumns__containerThird">  </div>
+        <div class="todoColumns__header todoColumns__header_colorBlue">Done: <span class="done"></span> </div>
+        <div class="todoColumns__container todoColumns__containerThird">  </div>
         <button class="todoColumns__delete">Delete All</button>
     </div>
+    </div>
+    <div class="popUp">
+        <textarea class="popUp__title" cols = "30" rows = "1"></textarea>
+        <textarea class="popUp__description" rows = "5" ></textarea>
+        <div class ="buttonsBlock">
+        <select class ="userBlock">
+        <option class ="user1"></option>
+        <option  class ="user2"></option>
+        <option  class ="user3"></option>
+        </select>
+        <button class = "cancel__button">cancel</button>
+        <button class = "submit__button">submit</button>
+        </div>
     </div>
     <script type="module" src="./src/index.js"></script>
 </body>

@@ -13,7 +13,7 @@
   background: #ab8fe2;
   padding: 10px 50px;
   border-radius: 25px;
-  margin: 5px 10px 20px;
+  margin: 5px 10px 0px;
 }
 
 .header__item{
@@ -38,6 +38,10 @@
     padding: 20px;
     border-radius: 15px;
     font-size: 20px;
+    position: relative;
+    top: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .todoColumns__header_colorGreen{
@@ -78,7 +82,28 @@
     cursor: pointer;
 }
 
-.todoColumns__containerFirst, .todoColumns__containerSecond, .todoColumns__containerThird{
-height: 490px;
-overflow: auto;
+.todoColumns__containerFirst, .todoColumns__containerSecond, .todoColumns__containerThird {
+    height: 490px;
+    overflow: auto;
+    border-radius: 20px;
+    padding-top: 40px;
+    }
+
+
+.popUp {
+    width: 25%;
+    height: 25%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column ;
+    gap: 18px;
+    padding: 15px 18px;
+    border: 2px solid black;
+    border-radius: 25px;
+    display: none;
+
 }
