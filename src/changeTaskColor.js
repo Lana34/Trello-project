@@ -8,19 +8,19 @@ export function changeColor() {
     for (let elem of elems1) {
         elem.classList.remove("todoBlock_colorGrey")
         elem.classList.remove("todoBlock_colorBlue")
-        elem.classList.add("todoBlock_colorGreen")
+        elem.classList.add("todoBlock_colorPirple")
     }
 
     let elems2 = todosWrapper2.children
     for (let elem of elems2) {
-        elem.classList.remove("todoBlock_colorGreen")
+        elem.classList.remove("todoBlock_colorPirple")
         elem.classList.remove("todoBlock_colorBlue")
         elem.classList.add("todoBlock_colorGrey")
     }
 
     let elems3 = todosWrapper3.children
     for (let elem of elems3) {
-        elem.classList.remove("todoBlock_colorGreen")
+        elem.classList.remove("todoBlock_colorPirple")
         elem.classList.remove("todoBlock_colorGrey")
         elem.classList.add("todoBlock_colorBlue")
     }
