@@ -7,6 +7,7 @@ dayWeek.classList.add('header__clocksDay')
 export const dateClock = document.createElement('div')
 dayWeek.classList.add('header__clocksItem')
 
+const headerClocks = document.querySelector('.header__clocks')
  
 export  function getDate () {
     window.setInterval(function () {
@@ -15,6 +16,10 @@ export  function getDate () {
          const days = now.getDay()
          dayWeek.innerText = dayOfWeek[days]
          dateClock.innerText = now.toLocaleTimeString()
+         dateItem.innerText = new Date().toLocaleDateString()
+headerClocks.append(dateItem)
+headerClocks.append(dayWeek)
+headerClocks.append(dateClock)
        }, 0)
      }
    

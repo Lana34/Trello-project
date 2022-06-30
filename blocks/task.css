@@ -8,9 +8,11 @@ flex-direction: column;
 gap: 18px;
 margin: 15px;
 padding: 15px 18px;
+color: rgb(18, 2, 36);
 border: 2px solid black;
 border-radius: 25px;
-font-family: 'Poppins'
+font-family: 'Poppins';
+font-size: 20px;
 }
 
 .title, .description{
@@ -18,7 +20,7 @@ font-family: 'Poppins'
 }
 
 .todoItem{
-    background: #90EE90;
+    background-color: rgba(151, 42, 142, 0.8);
 }
 
 .cancel__button, .submit__button, .edit__button, .delete__button {
@@ -26,8 +28,22 @@ width: 80px;
 font-family: 'Poppins'
 }
 
+.delete__button, .cancel__button{
+    background: rgb(252, 85, 85);
+    color: aliceblue;
+    border: 2px solid  rgb(252, 85, 85);
+    border-radius: 5px;
+}
+
+.edit__button, .submit__button {
+    background: rgb(185, 205, 236);
+    color: rgb(7, 77, 138);
+    border: 2px solid  rgb(185, 205, 236);
+    border-radius: 5px;  
+}
+
 .cancel__button, .edit__button{
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .userBlock{
@@ -44,16 +60,16 @@ align-self: flex-end;
     justify-content: space-between;
 }
 
-.todoBlock_colorGreen{
-    background: #90EE90;
+.todoBlock_colorPirple{
+    background: rgba(151, 42, 142, 0.7);
 }
 
 .todoBlock_colorGrey{
-    background: #dee1e1;
+    background:  rgba(214, 208, 208, 0.6);
 }
 
 .todoBlock_colorBlue{
-    background: #afc9ec;
+    background:  rgba(69, 53, 214, 0.6);
 }
 
 .hide {

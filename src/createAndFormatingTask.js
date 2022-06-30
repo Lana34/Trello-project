@@ -42,8 +42,8 @@ const createTemplate = () => {
             <option  class ="user2"></option>
             <option  class ="user3"></option>
             </select>
-            <button class = "cancel__button">cancel</button>
-            <button class = "submit__button">submit</button>
+            <button class = "cancel__button">Cancel</button>
+            <button class = "submit__button">Submit</button>
             </div>
         </div>
     `
