@@ -133,6 +133,36 @@ export const fillTodocolumns = () => {
         getAmount()
     }
 }
+function changeTask(el, index){
+    fillHtmlList()
+    const okButton = document.querySelector(".submit__button")
+    const titleArea = document.querySelector(".title")
+    const descriptionArea = document.querySelector(".description")
+    const cancelButton = document.querySelector(".cancel__button")
+    const selectUser = document.querySelector(".userBlock")
+    
+    titleArea.value = el.title;
+    descriptionArea.value = el.description;
+    selectUser.value.innerHTML = el.user;
+    console.log(el.user)
+    okButton.addEventListener('click', () => {
+        if (titleArea.value && descriptionArea.value) {
+            tasks[index] = {
+                title: titleArea.value, 
+                description: descriptionArea.value, 
+                user: selectUser.value,
+                time: el.time, 
+                progress: false,
+                done: false
+            }
+        }
+        updateLocal()
+        fillTodocolumns()
+    })
+    cancelButton.addEventListener('click', () => {
+        fillTodocolumns()
+    })
+}
 
 
 addTaskBtn.addEventListener('click', () => {
