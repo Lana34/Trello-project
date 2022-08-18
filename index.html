@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link
+    rel="stylesheet"
+    href="https://meyerweb.com/eric/tools/css/reset/reset.css"
+  />
+    <title>Trello clone</title>
+</head>
+<body>
+     <div class="header">
+        <p class="header__item">Trello</p>
+        <div class="header__clocks"></div>
+    </div>
+    <div class="todoColumnsWrapper">
+    <div class="todoColumns__first">
+        <div class="todoColumns__header todoColumns__header_colorPurple">ToDo:<span class="todo"></span></div>
+        <div class="todoColumns__container todoColumns__containerFirst"></div>
+        <button class="todoColumns__add">Add Todo</button>
+    </div>
+    <div class="todoColumns__second">
+        <div class="todoColumns__header todoColumns__header_colorGrey">In progress: <span class="inProgress"></span> </div>
+        <div class="todoColumns__container todoColumns__containerSecond">  </div>
+    </div>
+    <div class="todoColumns__third">
+        <div class="todoColumns__header todoColumns__header_colorBlue">Done: <span class="done"></span> </div>
+        <div class="todoColumns__container todoColumns__containerThird">  </div>
+        <button class="todoColumns__delete">Delete All</button>
+    </div>
+    </div>
+    <div class="popUp__wrapper">   
+         <div class="popUp">
+    </div></div>
+    <script type="module" src="./src/index.js"></script>
+</body>
+</html>
